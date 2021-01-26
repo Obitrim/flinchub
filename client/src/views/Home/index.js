@@ -7,7 +7,10 @@ import Container from '../../components/Container';
 const Index = (props) => {
   return (
     <>
-    	<Banner heading="Heading" description="Description" />
+    	<Banner 
+    		heading="Flinc Hub" 
+    		description="As a business dealing with us, we build your business together by providing our most quality service. Hire us and get satisfied" 
+    	/>
     	<Container className="HomeView__Container">
     		<h1 className="ViewHeading">About Us</h1>
 	    	<article className="HomeView__Row">
