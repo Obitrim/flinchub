@@ -58,6 +58,15 @@
 	background: var(--light-grey);
 }
 
+.Header__NavItem--Active {
+	background-color: var(--blue) !important;
+	color: var(--white);
+}
+
+.Header__NavItem--Active:hover {
+	opacity: 0.9
+}
+
 @media (min-width: 576px) {
 	.Header__Navbar {
 		display: flex;
@@ -80,5 +89,10 @@
 	.Header__NavItem {
 		width: auto;
 		padding: 0.5em 1em;
+		border-radius: 5px;
+	}
+
+	.Header__NavItem + .Header__NavItem {
+		margin-left: 0.5em;
 	}
 }
