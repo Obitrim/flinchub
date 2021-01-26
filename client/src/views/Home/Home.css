@@ -1,5 +1,5 @@
 .HomeView__Container {
-	padding: 5em 0;
+	padding: var(--v-whitespace) 0;
 }
 
 .HomeView__Row {
