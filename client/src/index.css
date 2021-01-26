@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /*colors*/
-  --Ash: #707070;
+  --ash: #707070;
   --blue: #2699FB;
   --black: #190F12;
   --white: #FFFFFF;
@@ -38,4 +38,25 @@ code {
 
 .BgPrimary {
 	background-color: var(--blue);
+}
+
+.ViewHeading {
+  display: inline-block;
+  color: var(--ash);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.ViewHeading::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.2em);
+  
+  height: 5px;
+  width: 70%;
+  border-radius: 3em;
+  background-color: var(--ash);
 }
