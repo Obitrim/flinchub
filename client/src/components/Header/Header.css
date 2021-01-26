@@ -8,7 +8,12 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 99;
 	width: 100vw;
+}
+
+.Header--Shadow {
+	box-shadow: var(--light-outside-shadow);
 }
 
 .Header__Container {
@@ -43,7 +48,7 @@
 .Header__NavItem {
 	display: block;
 	width: 100%;
-	padding: 0.3em 1em;
+	padding: 0.5em 1em;
 
 	color: var(--black);
 	text-decoration: none;
