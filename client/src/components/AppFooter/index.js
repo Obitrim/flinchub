@@ -8,7 +8,7 @@ const Index = (props) => {
     		<div>
 	    		<strong className="FooterHeading">Contact Us</strong>
 	    		<a className="AppFooter__Link" href="tel:+233549569486">Tel: +233 54 956 9486</a>
-	    		<a className="AppFooter__Link" href="mailto:flinchub@gmail">flinchub@gmail.com</a>
+	    		<a className="AppFooter__Link" href="mailto:info.flinchub@gmail">info.flinchub@gmail.com</a>
 	    	</div>
 	    	<div>
 	    		<strong className="FooterHeading">Customer Services</strong>
