@@ -24,7 +24,7 @@ const Index = (props) => {
 	    		</section>
 	    		<section className="HomeView__Col"></section>
 	    	</article>
-	    	</Container>
+	    </Container>
     </>
   )
 }
