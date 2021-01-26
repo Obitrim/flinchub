@@ -38,8 +38,10 @@
 .AppFooter__EmailInput {
 	border: none;
 	margin-top: 2em;
-	padding: 0.5em 1em;
+	padding: 0.7em 1em;
 	width: 100%;
+	font-size: calc(var(--font-size) + 2px);
+	border-radius: 5px;
 }
 
 .AppFooter__EmailInput:focus {
