@@ -1,0 +1,21 @@
+.BaseButton {
+	all: initial;
+	background-color: var(--blue);
+	border-radius: 5em;
+	border: 1px solid var(--blue);
+
+	padding: 0.5em 1.5em;
+	font-family: inherit;
+	color: var(--white);
+
+	transition: all var(--transition-speed);
+}
+
+.BaseButton:focus {
+	outline: none;
+}
+
+.BaseButton:hover {
+	color: var(--blue);
+	background-color: transparent;
+}

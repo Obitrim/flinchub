@@ -1,0 +1,13 @@
+.Banner {
+	background: red;
+	height: 60vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Banner__Desc {
+	margin: 1.5em 0;
+}

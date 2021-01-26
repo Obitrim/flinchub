@@ -1,0 +1,67 @@
+.AppFooter {
+	padding: 3em 0;
+	color: var(--white);
+}
+
+.AppFooter__Link {
+	text-decoration: none;
+	color: inherit;
+	text-transform: capitalize;
+
+	display: block;
+	padding: 0.3em 0;
+}
+
+.AppFooter__Link:hover {
+	opacity: 0.86;
+}
+
+.FooterHeading {
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+.AppFooter__Row {
+	display: grid;
+	grid-gap: 1.5em;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.AppFooter__CompanyName {
+	text-align: center;
+	margin-top: 2em;
+	font-size: calc(var(--font-size) - 2px);
+}
+
+.AppFooter__EmailInput {
+	border: none;
+	margin-top: 2em;
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.AppFooter__EmailInput:focus {
+	outline: none;
+	box-shadow: var(--light-inside-shadow);
+}
+
+.AppFooter__SubscribeBtn {
+	all: initial;
+	font-family: inherit;
+	font-weight: 450;
+	background-color: var(--white);
+
+	display: block;
+	margin-left: auto;
+	padding: 0.5rem 2rem;
+	margin-top: 0.5em;
+	border-radius: 5px;
+
+	transition: 0.25s;
+}
+
+.AppFooter__SubscribeBtn:hover {
+	cursor: pointer;
+	box-shadow: var(--light-outside-shadow);
+}
