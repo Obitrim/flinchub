@@ -23,6 +23,7 @@ body {
   --light-grey: #ededed;
 
   --container-width: 992px;
+  --v-whitespace: 5em;
   --font-size: 16px;
   --header-h: 70px;
   --transition-speed: 0.25s;
@@ -41,9 +42,10 @@ code {
 }
 
 .ViewHeading {
-  display: inline-block;
-  color: var(--ash);
+  color: var(--blue);
   text-transform: uppercase;
+  text-align: center;
+
   position: relative;
   margin-bottom: 0.5em;
 }
@@ -52,11 +54,12 @@ code {
   content: "";
 
   position: absolute;
-  left: 0;
   top: calc(100% + 0.2em);
+  left: 50%;
+  transform: translateX(-50%);
   
   height: 5px;
-  width: 70%;
+  width: 60px;
   border-radius: 3em;
-  background-color: var(--ash);
+  background-color: var(--blue);
 }
