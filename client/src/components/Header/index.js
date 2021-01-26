@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import './Header.css';
 import Container from '../Container';
@@ -33,11 +33,11 @@ const Index = (props) => {
 					>Toggler
 				</button>
 				<nav className={`Header__Navbar ${show && 'Header__Navbar--Show'}`}>
-					<Link to="" className="Header__NavItem">Home</Link>
-					<Link to="" className="Header__NavItem">Services</Link>
-					<Link to="" className="Header__NavItem">Team</Link>
-					<Link to="" className="Header__NavItem">Projects</Link>
-					<Link to="" className="Header__NavItem">Contact</Link>
+					<NavLink to="/" exact className="Header__NavItem" activeClassName="Header__NavItem--Active">Home</NavLink>
+					<NavLink to="/services" className="Header__NavItem" activeClassName="Header__NavItem--Active">Services</NavLink>
+					<NavLink to="/team" className="Header__NavItem" activeClassName="Header__NavItem--Active">Team</NavLink>
+					<NavLink to="/projects" className="Header__NavItem" activeClassName="Header__NavItem--Active">Projects</NavLink>
+					<NavLink to="/contact-us" className="Header__NavItem" activeClassName="Header__NavItem--Active">Contact</NavLink>
 				</nav>
 			</Container>
 		</header>
