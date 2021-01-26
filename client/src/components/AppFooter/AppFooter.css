@@ -19,7 +19,8 @@
 .FooterHeading {
 	display: block;
 	text-transform: uppercase;
-	margin-bottom: 1em;
+	font-size: calc(var(--font-size) + 2px);
+	margin-bottom: 0.5em;
 }
 
 .AppFooter__Row {
