@@ -1,12 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 import './Header.css';
 import Container from '../Container';
 
 const Index = (props) => {
+	const location = useLocation();
 	const [show, setShow] = useState(false);
+	const [offsetHeader, setOffsetHeader] = useState(false);
+
+	function handleShadowToggle(evt) {
+		// set offsetHeader flag to true if user scrolls more than 400px otherwise false
+		setOffsetHeader(document.body.scrollTop >= 400 || document.documentElement.scrollTop >= 400);
+	}
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleShadowToggle);
+		return () => window.removeEventListener('scroll', handleShadowToggle);
+	}, []);
+
+	// Always close nav items after navigating
+	useEffect(() => setShow(false), [location]);
 
 	return (
-		<header className="Header">
+		<header className={`Header ${offsetHeader && 'Header--Shadow'}`}>
 			<Container className="Header__Container">
 				<img className="Header__Logo" src="/" alt="logo"/>
 				<button 
@@ -16,11 +33,11 @@ const Index = (props) => {
 					>Toggler
 				</button>
 				<nav className={`Header__Navbar ${show && 'Header__Navbar--Show'}`}>
-					<a href="#" className="Header__NavItem">Home</a>
-					<a href="#" className="Header__NavItem">Services</a>
-					<a href="#" className="Header__NavItem">Team</a>
-					<a href="#" className="Header__NavItem">Projects</a>
-					<a href="#" className="Header__NavItem">Contact</a>
+					<Link to="" className="Header__NavItem">Home</Link>
+					<Link to="" className="Header__NavItem">Services</Link>
+					<Link to="" className="Header__NavItem">Team</Link>
+					<Link to="" className="Header__NavItem">Projects</Link>
+					<Link to="" className="Header__NavItem">Contact</Link>
 				</nav>
 			</Container>
 		</header>
