@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 
 import './Header.css';
 import Container from '../Container';
@@ -25,7 +25,9 @@ const Index = (props) => {
 	return (
 		<header className={`Header ${offsetHeader && 'Header--Shadow'}`}>
 			<Container className="Header__Container">
-				<img className="Header__Logo" src="/" alt="logo"/>
+				<Link to="/">
+					<img className="Header__Logo" src="/" alt="logo"/>
+				</Link>
 				<button 
 					type="button" 
 					className="NavbarToggler" 
