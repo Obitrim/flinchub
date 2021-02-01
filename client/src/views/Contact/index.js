@@ -1,8 +1,15 @@
 import React from 'react';
+import Banner from '../../components/Banner';
 
 const Index = (props) => {
   return (
-    <h1>Contact</h1>
+    <>
+    	<Banner 
+    		heading="Contact Us" 
+    		description="Get in touch with us and let's talk business"
+    	/>
+    	<h1>Contact Us</h1>
+    </>
   )
 }
 
