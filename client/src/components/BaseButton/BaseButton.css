@@ -11,6 +11,10 @@
 	transition: all var(--transition-speed);
 }
 
+.BaseButton--Large {
+	padding: 0.7em 2.5em;
+}
+
 .BaseButton:focus {
 	outline: none;
 }
