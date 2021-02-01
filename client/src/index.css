@@ -22,7 +22,7 @@ body {
   --white: #FFFFFF;
   --light-grey: #ededed;
 
-  --container-width: 992px;
+  --container-width: 1200px;
   --v-whitespace: 5em;
   --font-size: 16px;
   --header-h: 70px;
@@ -35,6 +35,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.MuiSvgIcon-root {
+  pointer-events: none !important;
 }
 
 .BgPrimary {
