@@ -1,13 +1,43 @@
 .Banner {
-	background: red;
+	background: var(--light-grey) url('./banner-bg.jpeg') no-repeat;
+	background-size: cover;
+	color: var(--white);
 	height: 60vh;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	position: relative;
+}
+
+.Banner * {
+	position: relative;
+	z-index: 10 !important;
+}
+
+.Banner::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+
+.Banner__Heading {
+	font-size: calc(var(--font-size) * 3);
 }
 
 .Banner__Desc {
-	margin: 1.5em 0;
+	font-size: calc(var(--font-size) + 2px);
+	line-height: 140%;
+	color: rgba(255, 255, 255, 0.7);
+	margin: 1.5em;
+	max-width: 600px;
+	text-align: center;
 }
