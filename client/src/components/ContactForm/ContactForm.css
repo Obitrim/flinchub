@@ -1,0 +1,21 @@
+.ContactForm {
+	background-color: var(--white);
+	border-radius: 1rem;
+	padding: 1.5rem;
+}
+
+.ContactForm .FormGroup { 
+	margin-top: 1rem;
+}
+
+.ContactForm .FormGroup__Label {
+	display: block;
+}
+
+.ContactForm .FormGroup__Input {
+	border: 1px solid var(--blue);
+	border-radius: 5rem;
+	padding: 0.5rem 1rem;
+	margin-top: 0.5rem;
+	width: 100%;
+}
