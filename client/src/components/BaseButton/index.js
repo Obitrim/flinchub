@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import './BaseButton.css';
 
-const Index = ({ text, onClick, size }) => {
+const Index = ({ text, type, onClick, size }) => {
   return (
     <button 
-    	type="button" 
+    	type={type}
     	className={`BaseButton ${size.toLowerCase() === 'large' && 'BaseButton--Large'}`} 
     	onClick={onClick}>
     	{text || 'Button'}
@@ -17,7 +17,8 @@ const Index = ({ text, onClick, size }) => {
 Index.propTypes = {
 	text: PropTypes.string,
 	onClick: PropTypes.func,
-	size: PropTypes.oneOf(['large', 'small'])
+	size: PropTypes.oneOf(['large', 'small']),
+	type: PropTypes.string
 }
 
 Index.defaultProps = {
@@ -25,7 +26,8 @@ Index.defaultProps = {
 	onClick: () => {
 		alert('Please pass onClick prop to handle click event');
 	},
-	size: 'small'
+	size: 'small',
+	type: 'button'
 }
 
 export default Index;
