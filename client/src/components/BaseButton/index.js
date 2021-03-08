@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 import './BaseButton.css';
 
-const Index = ({ text, type, onClick, size }) => {
+const Index = ({ text, type, onClick, size, className }) => {
   return (
     <button 
     	type={type}
-    	className={`BaseButton ${size.toLowerCase() === 'large' && 'BaseButton--Large'}`} 
-    	onClick={onClick}>
+    	className={`BaseButton ${size.toLowerCase() === 'large' && 'BaseButton--Large'} ${className}`} 
+    	onClick={onClick}
+    	>
     	{text || 'Button'}
     </button>
   )
