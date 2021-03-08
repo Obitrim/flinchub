@@ -3,7 +3,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	grid-gap: 2em 1em;
 
-	margin-top: 2.5em;
+	margin-top: 3em;
 }
 
 .Services__Service {
@@ -13,10 +13,17 @@
 .ServiceHeading {
 	color: var(--black);
 	font-size: calc(var(--font-size) * 1.4);
+	margin-top: 1rem;
 }
 
 .ServiceDescription {
 	color: var(--ash);
 	margin-top: 0.6em;
 	line-height: 140%;
+}
+
+
+.Service__Img {
+	width: 60%;
+	height: auto;
 }
