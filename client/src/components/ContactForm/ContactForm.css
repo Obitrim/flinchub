@@ -2,20 +2,53 @@
 	background-color: var(--white);
 	border-radius: 1rem;
 	padding: 1.5rem;
+	flex: 3;
 }
 
 .ContactForm .FormGroup { 
 	margin-top: 1rem;
 }
 
+.ContactForm .FormGroup--Inline {
+	display: flex;
+}
+
+.LastName {
+	margin-left: 1rem;
+}
+
+.LastName,
+.FirstName {
+	flex: 1;
+}
+
 .ContactForm .FormGroup__Label {
 	display: block;
 }
 
+.ContactForm .FormGroup__TextArea,
 .ContactForm .FormGroup__Input {
-	border: 1px solid var(--blue);
+	border: 1px solid var(--light-grey);
+	background-color: var(--light-grey);
 	border-radius: 5rem;
 	padding: 0.5rem 1rem;
 	margin-top: 0.5rem;
 	width: 100%;
+
+	transition: var(--transition-speed);
+}
+
+.ContactForm .FormGroup__TextArea:focus,
+.ContactForm .FormGroup__Input:focus {
+	border: 1px solid var(--blue);
+	background-color: var(--white);
+	outline: none;
+}
+
+.ContactForm .FormGroup__TextArea {
+	border-radius: 1rem;
+}
+
+.ContactForm__SubmitBtn {
+	margin-top: 2rem;
 }
