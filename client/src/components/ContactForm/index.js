@@ -37,7 +37,7 @@ const Index = ({WrapperClass}) => {
 	return (
 		<form className={`ContactForm ${WrapperClass}`}>
 			<div className="FormGroup FormGroup--Inline">
-				<div>
+				<div className="FirstName">
 					<label className="FormGroup__Label" htmlFor="firstName">First Name</label>
 					<input 
 						className="FormGroup__Input" 
@@ -48,7 +48,7 @@ const Index = ({WrapperClass}) => {
 						value={formData.firstName}
 					/>
 				</div>
-				<div>
+				<div className="LastName">
 					<label className="FormGroup__Label" htmlFor="lastName">Last Name</label>
 					<input 
 						className="FormGroup__Input" 
@@ -85,6 +85,7 @@ const Index = ({WrapperClass}) => {
 			<div className="FormGroup">
 				<label className="FormGroup__Label" htmlFor="message">Message</label>
 				<textarea 
+					className="FormGroup__TextArea"
 					name="message" 
 					id="message" 
 					rows="10"
