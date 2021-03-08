@@ -1,3 +1,55 @@
 .Contact__MainContent {
 	padding: var(--v-whitespace) 0;
 }
+
+.Contact__Col--Right {
+	margin-top: 2rem;
+}
+
+.Contact__Address,
+.Contact__Info {
+	background-color: var(--white);
+	border-radius: 1rem;
+	padding: 1.5rem;
+}
+
+.Contact__Col__Heading {
+	color: var(--ash);
+}
+
+.Contact__Col__Heading:not(:first-child) {
+	margin-top: 1rem;
+}
+
+.Contact__Info__Text {
+	margin-top: 1rem;
+	line-height: 150%;
+	font-size: 0.95rem;
+}
+
+.Contact__Info {
+	margin-top: 2rem;
+}
+
+.Contact__Address a {
+	text-decoration: none;
+	color: var(--blue);
+	font-weight: 700;
+}
+
+.Contact__Address a:hover {
+	text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+	.Contact__MainContent {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		grid-column-gap: 2rem;
+	}
+
+	.Contact__Col--Right {
+		margin-left: 2rem;
+		margin-top: 0;
+	}
+}
