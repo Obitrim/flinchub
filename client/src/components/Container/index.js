@@ -2,9 +2,9 @@ import React from 'react';
 import './Container.css';
 import PropTypes from 'prop-types';
 
-const Index = ({children, className}) => {
+const Index = ({children, className, ...props}) => {
   return (
-    <div className={`Container ${className}`}>{children}</div>
+    <div className={`Container ${className}`} {...props}>{children}</div>
   )
 }
 
