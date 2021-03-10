@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
+
+import './Projects.css';
 import Banner from '../../components/Banner';
 import FilterBar from '../../components/FilterBar';
 import Container from '../../components/Container';
+import ProjectCard from '../../components/ProjectCard';
 
 const Index = (props) => {
 	const [projects, setProjects] = useState([
-		{ title: 'School Management App', category: 'Websites', image: './webui.jpg' },
-		{ title: 'Facebook Logo', category: 'graphic design', image: './poster.jpg' },
-		{ title: 'Flinc Hub Stickers', category: 'laptop stickers', image: './sticker.jpg' }
+		{ title: 'School Management App', category: 'Websites', imageUrl: 'images/webui.jpg', previewUrl: 'https://google.com' },
+		{ title: 'Facebook Logo', category: 'graphic design', imageUrl: 'images/poster.jpg', previewUrl: '' },
+		{ title: 'Flinc Hub Stickers', category: 'laptop stickers', imageUrl: 'images/sticker.jpg', previewUrl: '' , previewUrl: ''},
+		{ title: 'Pharmart', category: 'Websites', imageUrl: 'images/webui.jpg', previewUrl: 'https://facebook.com' },
+		{ title: 'Facebook redesigned', category: 'graphic design', imageUrl: 'images/poster.jpg', previewUrl: '' },
+		{ title: 'JJ Rawlings Funeral Poster', category: 'laptop stickers', imageUrl: 'images/sticker.jpg', previewUrl: '' , previewUrl: ''}
 	]);
 	const [filter, setFilter] = useState('all');
 	const [filteredProjects, setFilteredProjects] = useState([]);
@@ -20,7 +26,7 @@ const Index = (props) => {
 			let filteredProjects = projects.filter(project => project.category.toLowerCase() === filter);
 			setFilteredProjects(filteredProjects);
 		}
-	}, [filter]);
+	}, [filter, projects]);
 
 	function onFilterChanged(filter){
 		setFilter(filter.toLowerCase());
@@ -42,9 +48,13 @@ const Index = (props) => {
 				<div className="Projects">
 					{filteredProjects.length > 0 && (
 						filteredProjects.map((project, index) => (
-							<p className="ProjectCard" key={project.title + index}>
-								{project.title}: {project.category}
-							</p>
+							<ProjectCard 
+								key={project.title + index} 
+								title={project.title}
+								previewUrl={project.previewUrl}
+								image={process.env.PUBLIC_URL + `${project.imageUrl}`}
+								shadow
+								/>
 						))
 					)}
 				</div>
