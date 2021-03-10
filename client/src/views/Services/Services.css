@@ -26,4 +26,5 @@
 .Service__Img {
 	width: 60%;
 	height: auto;
+	min-height: 8rem;
 }
