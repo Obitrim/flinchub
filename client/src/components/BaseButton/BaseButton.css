@@ -19,7 +19,9 @@
 	outline: none;
 }
 
-.BaseButton:hover {
-	color: var(--blue);
-	background-color: transparent;
+@media (min-width: 576px) {
+	.BaseButton:hover {
+		color: var(--blue);
+		background-color: transparent;
+	}
 }
