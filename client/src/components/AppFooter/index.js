@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 import Pulse from 'react-reveal/Pulse';
 
 import './AppFooter.css';
@@ -23,9 +24,9 @@ const Index = (props) => {
 		    	</div>
 		    	<div>
 		    		<strong className="FooterHeading">Information</strong>
-		    		<a className="AppFooter__Link" href="#">About Flinc Hub</a>
-		    		<a className="AppFooter__Link" href="#">Our works</a>
-		    		<a className="AppFooter__Link" href="#">Terms & Conditions</a>
+		    		<Link to="/about-us" className="AppFooter__Link" href="#">About Flinc Hub</Link>
+		    		<Link to="/projects" className="AppFooter__Link" href="#">Our works</Link>
+		    		<Link to="/terms" className="AppFooter__Link" href="#">Terms & Conditions</Link>
 		    	</div>
 		    	<div>
 		    		<strong className="FooterHeading">Subscribe</strong>
