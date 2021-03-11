@@ -1,4 +1,7 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 import './Services.css';
 import logoIcon from './logoDesign.svg';
@@ -21,30 +24,30 @@ const Index = (props) => {
     		<div className="Services__Row">
     			<div className="Services__Col">
     				<div className="Services__Service">
-                        <img className="Service__Img" src={webDevIcon} alt="Web development"/>
-    					<h2 className="ServiceHeading">Web Development</h2>
-    					<p className="ServiceDescription">Lorem ipsum dolor sit amet, consectetur, adipisicing elites dolores voluptatum quisquam atque?</p>
+                        <Zoom><img className="Service__Img" src={webDevIcon} alt="Web development"/></Zoom>
+    					<Fade><h2 className="ServiceHeading">Web Development</h2></Fade>
+    					<Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit amet, consectetur, adipisicing elites dolores voluptatum quisquam atque?</p></Slide>
     				</div>
     			</div>
     			<div className="Services__Col">
     				<div className="Services__Service">
-                        <img className="Service__Img" src={graphicDesignIcon} alt="Graphic Design"/>
-    					<h2 className="ServiceHeading">Graphic Design</h2>
-    					<p className="ServiceDescription">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Recusandae temporibus perspiciatis , ea. Sapiente, provident.</p>
+                        <Zoom><img className="Service__Img" src={graphicDesignIcon} alt="Graphic Design"/></Zoom>
+    					<Fade><h2 className="ServiceHeading">Graphic Design</h2></Fade>
+    					<Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Recusandae temporibus perspiciatis , ea. Sapiente, provident.</p></Slide>
     				</div>
     			</div>
     			<div className="Services__Col">
     				<div className="Services__Service">
-                        <img className="Service__Img" src={mobileDevIcon} alt="Mobile development"/>
-    					<h2 className="ServiceHeading">Mobile Development</h2>
-    					<p className="ServiceDescription">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Exercitationem inventore nihil nostrum labore officiis laudantium.</p>
+                        <Zoom><img className="Service__Img" src={mobileDevIcon} alt="Mobile development"/></Zoom>
+    					<Fade><h2 className="ServiceHeading">Mobile Development</h2></Fade>
+    					<Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Exercitationem inventore nihil nostrum labore officiis laudantium.</p></Slide>
     				</div>
     			</div>
     			<div className="Services__Col">
     				<div className="Services__Service">
-                        <img className="Service__Img" src={logoIcon} alt="Logo Design"/>
-    					<h2 className="ServiceHeading">Logo Design</h2>
-    					<p className="ServiceDescription">Lorem ipsum dolor sit amet consectetur lit. Natus dignissimos aut ab cupiditate. Cumque, sed.</p>
+                        <Zoom><img className="Service__Img" src={logoIcon} alt="Logo Design"/></Zoom>
+    					<Fade><h2 className="ServiceHeading">Logo Design</h2></Fade>
+    					<Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit amet consectetur lit. Natus dignissimos aut ab cupiditate. Cumque, sed.</p></Slide>
     				</div>
     			</div>
     		</div>

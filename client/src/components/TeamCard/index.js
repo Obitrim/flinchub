@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 import './TeamCard.css';
 
 const Index = ({ name, position, imageURL, ...props }) => {
   return (
     <div className="TeamCard">
-    	<img className="TeamCard--Img" src={imageURL} alt={`${name}'s image`}/>
-    	<h4 className="TeamCard--Name">{name}</h4>
-    	<p className="TeamCard--Position">{position}</p>
+    	<Zoom left><img className="TeamCard--Img" src={imageURL} alt={`${name}'s image`}/></Zoom>
+    	<Slide bottom><h4 className="TeamCard--Name">{name}</h4></Slide>
+    	<Slide bottom delay={250}><p className="TeamCard--Position">{position}</p></Slide>
     </div>
   )
 }

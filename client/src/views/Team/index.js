@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide';
 
 import './Team.css';
 import Banner from '../../components/Banner';
@@ -16,9 +17,9 @@ const Index = (props) => {
     	<Container className="Team__Container">
     		<section className="Team__GeneralInfo">
     			<h1 className="ViewHeading">Our Team</h1>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam placeat accusamus error reiciendis tenetur deleniti dolorem tempora reprehender</p>
-    			<p>Lorem ipsum dolor sit amet consectetur adipisihenderit voluptas, quaerat, in architecto quam blanditiis. Esse consequatur similique dicta, aliquam excepturi?</p>
-    			<p>Lorem lorem tempora reprehenderit voluptas, quaerat, in architecto quam blanditiis. Esse consequatur similique dicta, aliquam excepturi?</p>
+    			<Slide bottom><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam placeat accusamus error reiciendis tenetur deleniti dolorem tempora reprehender</p></Slide>
+    			<Slide bottom><p>Lorem ipsum dolor sit amet consectetur adipisihenderit voluptas, quaerat, in architecto quam blanditiis. Esse consequatur similique dicta, aliquam excepturi?</p></Slide>
+    			<Slide bottom delay={200}><p>Lorem lorem tempora reprehenderit voluptas, quaerat, in architecto quam blanditiis. Esse consequatur similique dicta, aliquam excepturi?</p></Slide>
     		</section>
             <section className="Team__Members">
                 <TeamCard/>

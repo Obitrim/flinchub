@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Zoom from 'react-reveal/Zoom';
 
 import './Projects.css';
 import Banner from '../../components/Banner';
@@ -45,19 +46,21 @@ const Index = (props) => {
 					filters={['All', 'Websites', 'Graphic Design', 'Laptop Stickers']}
 				/>
 				{/*Filtered works*/}
-				<div className="Projects">
-					{filteredProjects.length > 0 && (
-						filteredProjects.map((project, index) => (
-							<ProjectCard 
-								key={project.title + index} 
-								title={project.title}
-								previewUrl={project.previewUrl}
-								image={process.env.PUBLIC_URL + `${project.imageUrl}`}
-								shadow
-								/>
-						))
-					)}
-				</div>
+				<Zoom cascade spy={filter || projects}>
+					<div className="Projects">
+						{filteredProjects.length > 0 && (
+							filteredProjects.map((project, index) => (
+								<ProjectCard 
+									key={project.title + index} 
+									title={project.title}
+									previewUrl={project.previewUrl}
+									image={process.env.PUBLIC_URL + `${project.imageUrl}`}
+									shadow
+									/>
+							))
+						)}
+					</div>
+				</Zoom>
 			</Container>
 		</>
   )
