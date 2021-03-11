@@ -1,0 +1,25 @@
+.Team__Container {
+	padding: var(--v-whitespace) 0;
+}
+
+.Team__GeneralInfo {
+	text-align: center;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.Team__GeneralInfo p {
+	line-height: 140%;
+	margin-top: 0.8rem;
+}
+
+.Team__GeneralInfo p:first-of-type {
+	margin-top: 2rem;
+}
+
+.Team__Members {
+	display: grid;
+	grid-gap: 2.5rem 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+	margin-top: 2.5rem;
+}
