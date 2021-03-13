@@ -61,7 +61,7 @@ const Index = (props) => {
 		<header className={`Header ${offsetHeader && 'Header--Shadow'}`}>
 			<Container className="Header__Container">
 				<Link to="/">
-					<img className="Header__Logo" src="/" alt="logo"/>
+					<img className="Header__Logo" src="/images/logo.png" alt="logo"/>
 				</Link>
 				<IconButton 
 					type="button" 

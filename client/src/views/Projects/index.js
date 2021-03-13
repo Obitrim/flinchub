@@ -8,13 +8,13 @@ import Container from '../../components/Container';
 import ProjectCard from '../../components/ProjectCard';
 
 const Index = (props) => {
-	const [projects, setProjects] = useState([
+	const [projects] = useState([
 		{ title: 'School Management App', category: 'Websites', imageUrl: 'images/webui.jpg', previewUrl: 'https://google.com' },
 		{ title: 'Facebook Logo', category: 'graphic design', imageUrl: 'images/poster.jpg', previewUrl: '' },
-		{ title: 'Flinc Hub Stickers', category: 'laptop stickers', imageUrl: 'images/sticker.jpg', previewUrl: '' , previewUrl: ''},
+		{ title: 'Flinc Hub Stickers', category: 'laptop stickers', imageUrl: 'images/sticker.jpg', previewUrl: ''},
 		{ title: 'Pharmart', category: 'Websites', imageUrl: 'images/webui.jpg', previewUrl: 'https://facebook.com' },
 		{ title: 'Facebook redesigned', category: 'graphic design', imageUrl: 'images/poster.jpg', previewUrl: '' },
-		{ title: 'JJ Rawlings Funeral Poster', category: 'laptop stickers', imageUrl: 'images/sticker.jpg', previewUrl: '' , previewUrl: ''}
+		{ title: 'JJ Rawlings Funeral Poster', category: 'laptop stickers', imageUrl: 'images/sticker.jpg', previewUrl: ''}
 	]);
 	const [filter, setFilter] = useState('all');
 	const [filteredProjects, setFilteredProjects] = useState([]);

@@ -1,5 +1,11 @@
 import React from 'react';
-import Slide from 'react-reveal/Slide'
+import Slide from 'react-reveal/Slide';
+// import {
+// 	Facebook as FacebookIcon,
+// 	Instagram as InstagramIcon,
+// 	LinkedIn as LinkedInIcon,
+// 	Twitter as TwitterIconi
+// } from '@material-ui/icons';
 
 import './Contact.css';
 import Banner from '../../components/Banner';
@@ -22,17 +28,29 @@ const Index = (props) => {
 		    		<div className="Contact__Address">
 			    		<h2 className="Contact__Col__Heading">Address</h2>
 			    		<span>Main Branch: Kumasi - remote</span>
-			    		<h2 className="Contact__Col__Heading">Phone</h2>
+			    		<h2 className="Contact__Col__Heading">Call</h2>
 			    		<a href="tel:+233549569486">+233 549 569 486</a>
 			    		<h2 className="Contact__Col__Heading">Email</h2>
 			    		<a href="mailto:info.flinchub@gmail.com">info.flinchub@gmail</a>
+			    		<h2 className="Contact__Col__Heading">WhatsApp</h2>
+			    		<a href="https://wa.me/c/233549569486" target="_blank" rel="noreferrer">+233 549 569 486</a>
 			    	</div>
 		    	</Slide>
 		    	<Slide bottom>
 			    	<div className="Contact__Info">
-			    		<h2 className="Contact__Col__Heading">More Information</h2>
-			    		<p className="Contact__Info__Text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Ducimus molestias, blanditiis enim maxime nulla error, voluptatibus rerum id reiciendis! Cum.</p>
-			    		<p className="Contact__Info__Text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Ducimus molestias, blanditiis enim maxime nulla error, voluptatibus rerum id reiciendis! Cum.</p>
+			    		<h2 className="Contact__Col__Heading">Follow Us</h2>
+			    		<a href="#">
+			    			<span>Twitter</span>
+			    		</a>
+			    		<a href="#">
+			    			<span>LinkedIn</span>
+			    		</a>
+			    		<a href="#">
+			    			<span>Instagram</span>
+			    		</a>
+			    		<a href="#">
+			    			<span>Facebook</span>
+			    		</a>
 			    	</div>
 		    	</Slide>
 	    	</div>

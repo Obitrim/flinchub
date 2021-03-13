@@ -18,16 +18,23 @@ const Index = (props) => {
 	    		<Fade cascade bottom>
 		    		<section className="HomeView__Col">
 		    			<p className="HomeView__AboutText">
-		    				Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ratione quidem perspiciatis consectetur nulla natus facilis, reiciendis
-		    				accusamus fugit saepe voluptatibus magni iure amet quaerat illo corrupti consequatur doloremque molestias similique! lorem20
+		    				Hi and welcome to Flinc Hub, an IT based organization that looks that looks to provide services such as installation and activation of windows, idea advertisement, software installation, graphic design, logo 
+		    				design and animation.
 		    			</p>
-		    			<img src="" />
+		    			{/**<img src="" />**/}
 		    		</section>
 		    	</Fade>
 		    	<Fade cascade bottom>
 		    		<section className="HomeView__Col">
-		    			<p className="HomeView__AboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum perspiciatis quae sequi cumque, laboriosam quis hic aliquam voluptatibus natus fugit sapiente doloribus omnis, optio quas, dignissimos officia alias accusamus aspernatur ullam? Natus, dolor. Illum perspiciatis vitae ipsa veritatis harum perferendis. Animi, excepturi corporis, culpa sint rerum fugiat doloribus, optio voluptatem exercitationem quidem minus molestias eos distinctio, quaerat sequi sed.</p>
-		    			<p className="HomeView__AboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt aut iure iusto. Maiores, suscipit similique distinctio minima tempore amet, ullam ea rem, iure ipsum fugit accusamus veniam placeat. Odit.</p>
+		    			<p className="HomeView__AboutText">
+		    				We also provide top notch services in mobile app design and development, website design and development,
+							Search engine optimization services and laptop stickers
+		    			</p>
+		    			<p className="HomeView__AboutText">
+		    				Our Team of qualified personnel work to seek the best interest of
+							the customer with home-feeling services and best outcomes. Flinc Hub provides services for all individuals and corporate
+							organizations.
+		    			</p>
 		    		</section>
 	    		</Fade>
 	    		<section className="HomeView__Col"></section>

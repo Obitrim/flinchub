@@ -17,10 +17,10 @@ const Index = (props) => {
 		    	</div>
 		    	<div>
 		    		<strong className="FooterHeading">Customer Services</strong>
-		    		<a className="AppFooter__Link" href="#">Graphic Design</a>
-		    		<a className="AppFooter__Link" href="#">Web development</a>
-		    		<a className="AppFooter__Link" href="#">Mobile App development</a>
-		    		<a className="AppFooter__Link" href="#">Advertisements</a>
+		    		<span className="AppFooter__Link" href="#">Graphic Design</span>
+		    		<span className="AppFooter__Link" href="#">Web development</span>
+		    		<span className="AppFooter__Link" href="#">Mobile App development</span>
+		    		<span className="AppFooter__Link" href="#">Advertisements</span>
 		    	</div>
 		    	<div>
 		    		<strong className="FooterHeading">Information</strong>

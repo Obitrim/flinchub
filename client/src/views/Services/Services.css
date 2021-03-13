@@ -1,7 +1,7 @@
 .Services__Row {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-	grid-gap: 2em 1em;
+	grid-gap: 3rem 1em;
 
 	margin-top: 3em;
 }
@@ -24,7 +24,7 @@
 
 
 .Service__Img {
-	width: 60%;
-	height: auto;
+	width: auto;
+	height: 100px;
 	min-height: 8rem;
 }

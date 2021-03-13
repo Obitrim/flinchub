@@ -5,8 +5,10 @@ import HeadShake from 'react-reveal/HeadShake';
 
 import './Services.css';
 import logoIcon from './logoDesign.svg';
+import softwareIcon from './software.svg';
 import webDevIcon from './webdev-icon.svg';
 import mobileDevIcon from './mobile-icon.svg';
+import laptopSticker from './laptop-sticker.svg';
 import graphicDesignIcon from './graphic-design.svg';
 
 import Banner from '../../components/Banner';
@@ -50,6 +52,20 @@ const Index = (props) => {
     					<Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit amet consectetur lit. Natus dignissimos aut ab cupiditate. Cumque, sed.</p></Slide>
     				</div>
     			</div>
+                <div className="Services__Col">
+                    <div className="Services__Service">
+                        <Zoom><img className="Service__Img" src={softwareIcon} alt="software installation"/></Zoom>
+                        <HeadShake><h2 className="ServiceHeading">Software Installation</h2></HeadShake>
+                        <Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit amet consectetur lit. Natus dignissimos aut ab cupiditate. Cumque, sed.</p></Slide>
+                    </div>
+                </div>
+                <div className="Services__Col">
+                    <div className="Services__Service">
+                        <Zoom><img className="Service__Img" src={laptopSticker} alt="Laptop stickers"/></Zoom>
+                        <HeadShake><h2 className="ServiceHeading">Laptop Sticker</h2></HeadShake>
+                        <Slide bottom><p className="ServiceDescription">Lorem ipsum dolor sit amet consectetur lit. Natus dignissimos aut ab cupiditate. Cumque, sed.</p></Slide>
+                    </div>
+                </div>
     		</div>
 	    </Container>
 	</>

@@ -8,7 +8,7 @@ import './TeamCard.css';
 const Index = ({ name, position, imageURL, ...props }) => {
   return (
     <div className="TeamCard">
-    	<Zoom left><img className="TeamCard--Img" src={imageURL} alt={`${name}'s image`}/></Zoom>
+    	<Zoom left><img className="TeamCard--Img" src={imageURL} alt={`${name}`}/></Zoom>
     	<Slide bottom><h4 className="TeamCard--Name">{name}</h4></Slide>
     	<Slide bottom delay={250}><p className="TeamCard--Position">{position}</p></Slide>
     </div>

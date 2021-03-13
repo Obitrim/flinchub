@@ -21,16 +21,29 @@ const Index = (props) => {
 	    <Container className="AboutView" style={{ padding: 'var(--v-whitespace) 0' }}>
 	    	<h1 className="ViewHeading" style={{ marginBottom: '2rem' }}>Mission & Vision</h1>
     		<p style={textStyles}>
-	    		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta autem voluptate asperiores cumque dolorum dolorem eaque, obcaecati. Ex sit praesentium, fugit nam itaque. Omnis possimus, id provident natus similique quia velit quos dolore quas magni sed unde pariatur, voluptate.
+	    		The mission of flicn hub is to be the most sought Information Technology consultancy in creating a better everyday life by providing satisfactory solutions for people and business entities.
 	    	</p>
 	    	<p style={textStyles}>
-	    		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta autem voluptate asperiores cumque dolorum dolorem eaque, obcaecati. Ex sit praesentium, fugit nam itaque. Omnis possimus, id provident natus similique quia velit quos dolore quas magni sed unde pariatur, voluptate.
+	    		Our vision is to find solutions to major issues affecting business entities, people and the Ghana as a whole.
 	    	</p>
+	    	<h3 style={{...textStyles, marginBottom: '0'}}>Core Values</h3>
+	    	<ul style={textStyles}>
+    			<li style={{ transform: 'translateX(2rem)' }}>Deliver on our promise</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Be the best</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Be accountable, honest, trustworthy and truthful to client</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Bold to come up with innovative ideas to tackle problems</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Be passionate and committed to serving the client</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Create a fun filled environment for client</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Always learn and constantly improve on skills</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Build simple but quality solutions with our great teamwork</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Focus on solving problems in many diversities</li>
+    			<li style={{ transform: 'translateX(2rem)' }}>Respect for colleagues and clients</li>
+    		</ul>
 	    	<p style={textStyles}>
-	    		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta autem voluptate asperiores cumque dolorum dolorem eaque, obcaecati. Ex sit praesentium, fugit nam itaque. Omnis possimus, id provident natus similique quia velit quos dolore quas magni sed unde pariatur, voluptate.
+	    		
 	    	</p>
 	    	<Pulse forever>
-		    	<BaseButton size="large" style={{ margin: '2rem auto', display: 'block' }}>
+		    	<BaseButton size="large" style={{ margin: '3rem auto', display: 'block' }}>
 		    		Contact Us
 		    	</BaseButton>
 		    </Pulse>
