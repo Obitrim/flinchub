@@ -52,3 +52,9 @@
 .ContactForm__SubmitBtn {
 	margin-top: 2rem;
 }
+
+.ContactForm .ErrorMessage {
+	margin-top: 0.3rem;
+	font-size: calc(var(--font-size) - 2px);
+	color: var(--insta-red);
+}
