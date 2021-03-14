@@ -11,6 +11,12 @@
 	transition: all var(--transition-speed);
 }
 
+.BaseButton:disabled {
+	background-color: var(--light-grey);
+	border-color: var(--light-grey);
+	color: var(--ash);
+}
+
 .BaseButton--Large {
 	padding: 0.7em 2.5em;
 }
