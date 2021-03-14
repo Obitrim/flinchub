@@ -1,7 +1,7 @@
 .Services__Row {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-	grid-gap: 3rem 1em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 3rem 2em;
 
 	margin-top: 3em;
 }
