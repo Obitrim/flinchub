@@ -42,6 +42,71 @@
 	text-decoration: underline;
 }
 
+.SocialMedia {
+	display: grid;
+	/*grid-gap: 1rem;*/
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	margin-top: 1rem;
+}
+
+.SocialMedium {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+}
+
+[data-text="Twitter"]::after,
+[data-text="Twitter"] {
+	color: var(--blue) !important;
+}
+
+[data-text="Instagram"]::after,
+[data-text="Instagram"] {
+	color: var(--insta-red) !important;
+}
+
+[data-text="LinkedIn"]::after,
+[data-text="LinkedIn"] {
+	color: var(--linkedIn-blue) !important;
+}
+[data-text="Facebook"]::after,
+[data-text="Facebook"] {
+	color: var(--fb-blue) !important;
+}
+
+.SocialMedium::before, .SocialMedium::after {
+	content: attr(data-text);
+	width: 100%;
+	height: 100%;
+	padding-left: 2.5rem;
+	color: var(--black);
+
+	position: absolute;
+	left: 0;
+	top: 0;
+
+
+	display: flex;
+	align-items: center;
+
+	transition: var(--transition-speed);
+	z-index: 1;
+}
+.SocialMedium::after {
+	top: 100%;
+	font-weight: 600;
+	z-index: 3;
+}
+
+
+
+.SocialMedium:hover::before { top: -100% }
+.SocialMedium:hover::after { top: 0 }
+
 @media (min-width: 768px) {
 	.Contact__MainContent {
 		display: grid;
